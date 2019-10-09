@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRAS - Pacatuba</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+</head>
+
+<body>
+
+    <div class="cras-top">
+        <img src="assets/imgs/cras.png">
+        <h5>(<a href="main.html">Voltar</a>)</h5>
+
+
+    </div>
+
+    <div class="cras-tela" style="display: flex;">
+
+        <div class="col-md-8 order-md-1" style="margin: 0 auto; width:89%;">
+            <h4 class="mb-3">Informações da Pessoa:</h4>
+            <form class="needs-validation" action="geladeira.php">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="primeiroNome">Nome Completo *</label>
+                        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sobrenome">Apelido</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="primeiroNome">Contato 1 *</label>
+                        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sobrenome">Contato 2</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="primeiroNome">RG *</label>
+                        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sobrenome">Nome Mãe</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="pais">ORGÃO *</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="estado">UF *</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="cep">Data Emissão *</label>
+                        <input type="date" class="form-control" id="cep" placeholder="" required>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="primeiroNome">CPF *</label>
+                        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sobrenome">NIS *</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+
+                    </div>
+                </div>
+
+                <h4 class="mb-3">Informações de Endereço:</h4>
+
+
+
+
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="pais">Localização do domicílio</label>
+                        <select class="form-control" id="pais" required>
+                            <option value="1">Urbano</option>
+                            <option value="2">Rural</option>
+                        </select>
+
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="estado">Estado</label>
+                        <select class="form-control" id="estado" required>
+                                <option value="CE">Ceará</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                        </select>
+
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cep">Municipio</label>
+                        <input type="text" class="form-control" id="cep" placeholder="" required>
+
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep" placeholder="" required>
+
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="pais">Rua</label>
+                            <input type="text" class="form-control" id="cep" placeholder="" required>
+    
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="estado">Bairro</label>
+                            <input type="text" class="form-control" id="cep" placeholder="" required>
+    
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="cep">Número</label>
+                            <input type="text" class="form-control" id="cep" placeholder="" required>
+    
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="cep">Complemento</label>
+                            <input type="text" class="form-control" id="cep" placeholder="" required>
+    
+                        </div>
+                    </div>
+                    <div class="custom-control abrigo">
+                            <input type="checkbox" class="custom-control-input" id="mesmo-endereco">
+                            <label class="custom-control-label" for="mesmo-endereco">Assinale caso o endereço for um abrigo</label>
+                          </div>
+                    
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
+                <hr class="mb-4">
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script>
+        $('select').selectpicker();
+
+    </script>
+
+
+</body>
+
+</html>
