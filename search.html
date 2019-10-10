@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CRAS - Pacatuba</title>
+    <title>Pesquisar - CRAS - Pacatuba</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -23,14 +23,16 @@
         <h5>(<a href="main.html">Voltar</a>)</h5>
         <form>
             <div class="input-group pesquisar">
+                <input id="email" type="text" class="form-control" name="email" placeholder="Pesquise por Nome, Cidade, Bairro, Rua, CPF, RG, NIS...">
                 <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input id="email" type="text" class="form-control" name="email" placeholder="Pesquisar">
+              
             </div>
+           
         </form>
 
     </div>
     <div class="cras-tela">
-        <table class="table tabela-centro" id="tabela">
+        <table class="table tabela-centro" id="tabela" onclick="ver_usuario()">
             <thead>
                 <tr>
                     <th scope="col">Nome</th>
@@ -166,6 +168,9 @@
                 }
             });
         });
+        function ver_usuario(){
+            window.location.href = "user.html"; 
+        }
     </script>
 </body>
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CRAS - Pacatuba</title>
+    <title>Cadastro - CRAS - Pacatuba</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -28,11 +28,14 @@
 
     </div>
 
-    <div class="cras-tela" style="display: flex;">
+    <h3 class="mb-3 info-tela">Cadastro</h3>
+    <div class="cras-tela flex">
 
-        <div class="col-md-8 order-md-1" style="margin: 0 auto; width:89%;">
-            <h4 class="mb-3">Informações da Pessoa:</h4>
-            <form class="needs-validation" action="geladeira.php">
+        <div class="col-md-8 order-md-1 criar-usuario " >
+            
+            <form class="dados-pessoa" action="#">
+                    <h4 class="mb-3">Informações da Pessoa:</h4>
+                    <hr class="mb-4">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="primeiroNome">Nome Completo *</label>
@@ -96,8 +99,8 @@
                     </div>
                 </div>
 
-                <h4 class="mb-3">Informações de Endereço:</h4>
-
+                <h4 class="mb-3 espaco">Informações de Endereço:</h4>
+                <hr class="mb-4">
 
 
 
@@ -177,14 +180,27 @@
                         </div>
                     </div>
                     <div class="custom-control abrigo">
+                          
                             <input type="checkbox" class="custom-control-input" id="mesmo-endereco">
                             <label class="custom-control-label" for="mesmo-endereco">Assinale caso o endereço for um abrigo</label>
                           </div>
+                          <h4 class="mb-3">Relatório:</h4>
+                          <div class="row espaco">
+                                <div class="col-md-4 mb-3">
+                                    <label for="cep">Data do Relatório:</label>
+                                    <input type="date" class="form-control" id="" placeholder="" required>
+            
+                                </div>
+                            </div>
+                            <div class="espaco">
+                                <textarea class="md-textarea form-control" rows="8"></textarea>
+            
+                            </div>
                     
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
-                <hr class="mb-4">
+                <button class="btn btn-primary btn-mg btn-block" type="submit">Cadastrar</button>
             </form>
+            <hr class="mb-4">
         </div>
 
     </div>
